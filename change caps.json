@@ -1,0 +1,54 @@
+{
+      "description": "Disable caps_lock delay (rev 1)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "caps_lock",
+            "modifiers": {
+              "optional": [
+                "any"
+              ]
+            }
+          },
+          "to_if_held_down": [
+            {
+              "key_code": "caps_lock",
+              "hold_down_milliseconds": 200
+            },
+            {
+              "key_code": "vk_none"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}，
+{
+      "description": "Disable caps_lock delay (rev 1)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "caps_lock",
+            "modifiers": {
+              "optional": [
+                "any"
+              ]
+            }
+          },
+          "to_after_key_up": [
+            {
+              "key_code": "caps_lock",
+              "hold_down_milliseconds": 200
+            },
+            {
+              "key_code": "vk_none"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
